@@ -1,10 +1,8 @@
-import { Component , Input } from '@angular/core'
-
+import { Component, Input } from '@angular/core';
 import { Hero } from './hero';
 
-/* metadata.. */
 @Component({
-  selector: 'my-hero-detail';
+  selector: 'my-hero-detail',
   template: `
     <div *ngIf="hero">
       <h2>{{hero.name}} details!</h2>
@@ -16,8 +14,6 @@ import { Hero } from './hero';
     </div>
   `
 })
-
-
 export class HeroDetailComponent {
   @Input()
   hero: Hero;
